@@ -1,0 +1,2 @@
+run:
+	python superset.py
