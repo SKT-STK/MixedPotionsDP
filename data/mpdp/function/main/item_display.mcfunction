@@ -6,4 +6,6 @@ execute at @n[tag=mpdp.this7] if score @n[tag=mpdp.this7] mpdp.level matches 1 r
 execute at @n[tag=mpdp.this7] if score @n[tag=mpdp.this7] mpdp.level matches 2 run tp @s ~ ~.49 ~
 execute at @n[tag=mpdp.this7] if score @n[tag=mpdp.this7] mpdp.level matches 3 run tp @s ~ ~.65 ~
 
+data modify entity @s item.components."minecraft:potion_contents".custom_effects set from entity @n[tag=mpdp.this7] data."mpdp.potions"
+
 tag @e[tag=mpdp.this7] remove mpdp.this7
