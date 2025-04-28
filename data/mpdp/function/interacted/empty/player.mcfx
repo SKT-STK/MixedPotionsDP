@@ -1,0 +1,7 @@
+tag @s add mpdp.player
+
+execute summon area_effect_cloud{Tags:["mpdp.this9"],Radius:0.1f,Duration:6} run data modify entity @s potion_contents.custom_effects set from entity @n[tag=mpdp.this8] data."mpdp.potions"
+data modify entity @n[tag=mpdp.this9] potion_contents.custom_effects[0].duration set value 100
+data modify entity @n[tag=mpdp.this9] potion_contents.custom_effects[1].duration set value 100
+data modify entity @n[tag=mpdp.this9] potion_contents.custom_effects[2].duration set value 100
+tag @n[tag=mpdp.this9] remove mpdp.this9

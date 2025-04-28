@@ -4,5 +4,5 @@ playsound minecraft:block.stone.place block @a ~ ~ ~ 1 .8
 scoreboard players add %global mpdp.id 1
 scoreboard players operation @s mpdp.id = %global mpdp.id
 execute positioned ~ ~.25 ~ summon turtle{Team:"mpdp.no_collision",Silent:1b,Age:-32767,active_effects:[{id:"invisibility",duration:-1,show_particles:0b},{id:"resistance",duration:-1,show_particles:0b,amplifier:255}],Tags:["mpdp.turtle"]} run scoreboard players operation @s mpdp.id = %global mpdp.id
-execute positioned ~ ~.25 ~ summon marker{Tags:["mpdp.marker"],data:{"mpdp.potions": []}} run scoreboard players operation @s mpdp.id = %global mpdp.id
+execute positioned ~ ~.25 ~ summon marker{Tags:["mpdp.marker"],data:{"mpdp.potions":[],"mpdp.modifier":"none"}} run scoreboard players operation @s mpdp.id = %global mpdp.id
 execute positioned ~ ~.25 ~ summon item_display{Tags:["mpdp.display"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[1f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.75f,0.9f,0.75f]},item:{id:"minecraft:dirt",count:1,components:{"minecraft:item_model":"mpdp:potion"}}} run scoreboard players operation @s mpdp.id = %global mpdp.id
